@@ -76,9 +76,11 @@ fun wasiReadLN() : String = withScopedMemoryAllocator { allocator ->
     return input
 }
 fun main() {
-    val input = wasiReadLN()
-
-    wasiPrintLn(input);
+    while(true) {
+        val input = wasiReadLN()
+        val prefixed = "Wasm received: $input"
+        wasiPrintLn(prefixed);
+    }
 }
 
 @WasmExport
