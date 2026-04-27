@@ -66,6 +66,7 @@ fun wasiReadLN() : String = withScopedMemoryAllocator { allocator ->
 
     val size = Pointer(nread.address).loadInt()
 
+
     val bytes = ByteArray(size)
     for (i in 0 until size) {
         bytes[i] = Pointer(buffer.address + i.toUInt()).loadByte()
@@ -76,6 +77,7 @@ fun wasiReadLN() : String = withScopedMemoryAllocator { allocator ->
     return input
 }
 fun main() {
+
     while(true) {
         val input = wasiReadLN()
         val prefixed = "Wasm received: $input"
@@ -84,4 +86,4 @@ fun main() {
 }
 
 @WasmExport
-fun dummy() {}
+fun dummy(){}
