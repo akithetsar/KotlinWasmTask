@@ -19,6 +19,10 @@ Additionally, an **IntelliJ IDEA Run Configuration is provided** so the project 
 
 ---
 
+## DEMO
+
+https://github.com/user-attachments/assets/7173b141-7cec-45a0-a68d-964fb174be9a
+
 ## Prerequisites
 
 ### 1) Java / JDK (IMPORTANT)
